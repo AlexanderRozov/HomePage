@@ -1,0 +1,12 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "Blog Post 1",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "author": "Your Name",
+        "createdAt": "2022-01-01T00:00:00Z"
+      },
+      // Add more blog posts here
+    ]
+  }

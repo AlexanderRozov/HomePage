@@ -16,6 +16,43 @@
 </head>
 <body>
 
+    <div class="admin-panel" id="adminPanel">
+        <h3>Admin Panel</h3>
+        <button class="btn btn-danger" id="logoutBtn">Logout</button>
+        <hr>
+        <h4>Create Post</h4>
+        <form id="createPostForm">
+          <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="title" required>
+          </div>
+          <div class="mb-3">
+            <label for="content" class="form-label">Content</label>
+            <textarea class="form-control" id="content" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Create Post</button>
+        </form>
+        <hr>
+        <h4>Edit Post</h4>
+        <form id="updatePostForm" style="display: none;">
+          <input type="hidden" id="postId">
+          <div class="mb-3">
+            <label for="editTitle" class="form-label">Title</label>
+            <input type="text" class="form-control" id="editTitle" required>
+          </div>
+          <div class="mb-3">
+            <label for="editContent" class="form-label">Content</label>
+            <textarea class="form-control" id="editContent" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Update Post</button>
+          <button type="button" class="btn btn-secondary" id="cancelEdit">Cancel</button>
+        </form>
+        <hr>
+        <h4>Posts</h4>
+        <ul class="list-group" id="postsList">
+        </ul>
+      </div>
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="#">Your Name</a>
